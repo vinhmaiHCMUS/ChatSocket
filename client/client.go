@@ -10,7 +10,7 @@ import (
 
 func main() {
 	// Kết nối tới server trên cổng 8080
-	conn, err := net.Dial("tcp", "127.0.0.1:10010")
+	conn, err := net.Dial("tcp", "app-server:10010")
 	if err != nil {
 		fmt.Println("Error connecting to server:", err)
 		return
