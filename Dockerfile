@@ -2,13 +2,13 @@
 FROM golang:1.17
 
 # Sao chép mã nguồn vào container
-COPY server.go /app/
+COPY client.go /app/
 
 # Thiết lập thư mục làm việc
 WORKDIR /app
 
 # Build ứng dụng
-RUN go build server.go
+RUN go build client.go
 
 # Chạy server khi container được khởi chạy
-CMD ["./server"]
+CMD ["./client"]
