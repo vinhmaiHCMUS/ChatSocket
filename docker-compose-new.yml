@@ -18,8 +18,8 @@ services:
       - app-server
     networks:
       - default-network
-    links:
-      - app-server
+#    links:
+#      - app-server
 
 
 networks:
