@@ -11,7 +11,7 @@ var mutex sync.Mutex
 
 func main() {
 	// Lắng nghe kết nối từ client trên cổng 10010
-	listener, err := net.Listen("tcp", "127.0.0.1:10010")
+	listener, err := net.Listen("tcp", ":10010")
 	if err != nil {
 		fmt.Println("Error listening:", err)
 		return

@@ -1,0 +1,5 @@
+To start:
+docker-compose -f docker-compose-new.yml up --build --force-recreate --no-deps
+
+To stop:
+docker-compose -f docker-compose-new.yml down
